@@ -1,26 +1,57 @@
 import * as React from "react";
+import Row from "../Projects/Row";
+import "./projects.scss";
 
-export default class HelloWorld extends React.Component<any, any> {
+interface ComponentState {
+  skills: Array<RowsComp>;
+}
+
+interface RowsComp {
+  src: string;
+  title: string;
+  desc: string;
+}
+
+export default class Projects extends React.Component<any, ComponentState> {
   constructor(props: any) {
     super(props);
+    this.state = {
+      skills: [
+        {
+          src: "https://github.com/itamardavidyan/Heroku-mLab-Webinar",
+          title: "Heroku-mLab-Webinar",
+          desc: "Webinar that I passed about Heroku and mLab"
+        },
+        { src: "", title: "", desc: "" },
+        { src: "", title: "", desc: "" },
+        { src: "", title: "", desc: "" },
+        { src: "", title: "", desc: "" }
+      ]
+    };
   }
 
   public render() {
     return (
-      <section className="section" id="projects">
-        <header className="section-header">
-          <div className="small-container">
-            <h2>Projects</h2>
-            <p>Some projects I made in my free time.</p>
-            <p>
-              <a href="https://github.com/itamardavidyan" className="button">
-                View GitHub
-              </a>
-            </p>
-          </div>
-        </header>
+      <section className="text-center" id="projects">
         <div className="container">
-          <table>
+          <header className="section-header">
+            <div className="small-container">
+              <h2>Projects</h2>
+              <p>Some projects I made in my free time.</p>
+              <p>
+                <a
+                  className="btn btn-primary"
+                  role="button"
+                  href="https://github.com/itamardavidyan"
+                >
+                  View GitHub
+                </a>
+              </p>
+            </div>
+          </header>
+        </div>
+        <div className="container">
+          <table className="table table-striped table-bordered">
             <thead>
               <tr>
                 <th>Project</th>
@@ -28,56 +59,7 @@ export default class HelloWorld extends React.Component<any, any> {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <a
-                    href="https://taniarascia.github.io/new-moon/"
-                    target="_blank"
-                  >
-                    New Moon
-                  </a>
-                </td>
-                <td>A dark syntax theme optimized for web development.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://taniarascia.github.io/primitive"
-                    target="_blank"
-                  >
-                    Primitive
-                  </a>
-                </td>
-                <td>
-                  A Sass starterpack that provides helpful, browser-consistent
-                  styling for UI elements.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://taniarascia.github.io/coffee"
-                    target="_blank"
-                  >
-                    Cafetography
-                  </a>
-                </td>
-                <td>
-                  A project to keep track of the flavor and ambiance of all the
-                  coffeeshops that I write at.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://taniarascia.com/music" target="_blank">
-                    Ivory &amp; Ivory
-                  </a>
-                </td>
-                <td>
-                  A list of all my musical recordings, in which I sing and play
-                  accordion.
-                </td>
-              </tr>
+              <Row />
             </tbody>
           </table>
         </div>

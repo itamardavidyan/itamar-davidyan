@@ -11,7 +11,7 @@ interface SkillsComp {
   name: string;
 }
 
-export default class MyComponent extends React.Component<{}, ComponentState> {
+export default class TechSkills extends React.Component<{}, ComponentState> {
   constructor(props: {}) {
     super(props);
     this.state = {

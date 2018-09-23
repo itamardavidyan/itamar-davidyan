@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default class HelloWorld extends React.Component<any, any> {
+export default class Skill extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
