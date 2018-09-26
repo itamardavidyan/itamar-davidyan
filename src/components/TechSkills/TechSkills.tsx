@@ -83,7 +83,7 @@ export default class TechSkills extends React.Component<{}, ComponentState> {
   public render() {
     return (
       <section className="text-center">
-        <div className="container">
+        <div className="container small-container">
           <h2 className="jumbotron-heading">Technical Skills</h2>
           <p className="m-container lead text-muted">
             I specialize in front end development, with knowledge in system

@@ -1,11 +1,14 @@
 {
-  "name": "hello",
+  "name": "itamar-davidyan",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/itamardavidyan/itamar-davidyan",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "predeploy": "npm tun build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +16,7 @@
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "awesome-typescript-loader": "^3.4.1",
+    "gh-pages": "^2.0.0",
     "typescript": "^2.7.2",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.9.7"

@@ -3,7 +3,7 @@ import Row from "../Projects/Row";
 import "./projects.scss";
 
 interface ComponentState {
-  skills: Array<RowsComp>;
+  rows: Array<RowsComp>;
 }
 
 interface RowsComp {
@@ -16,18 +16,44 @@ export default class Projects extends React.Component<any, ComponentState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      skills: [
+      rows: [
+        {
+          src: "https://github.com/itamardavidyan/itamar-davidyan",
+          title: "Resume Site",
+          desc: "This (my) resume site that I deployed by myself in ReactJS"
+        },
         {
           src: "https://github.com/itamardavidyan/Heroku-mLab-Webinar",
           title: "Heroku-mLab-Webinar",
           desc: "Webinar that I passed about Heroku and mLab"
         },
-        { src: "", title: "", desc: "" },
-        { src: "", title: "", desc: "" },
-        { src: "", title: "", desc: "" },
-        { src: "", title: "", desc: "" }
+        {
+          src: "https://github.com/itamardavidyan/Forms-Application",
+          title: "Form Application",
+          desc:
+            "fullstack website to manage forms (node.js, jQuery and mongoDB)"
+        },
+        {
+          src: "https://github.com/itamardavidyan/minesweeper-Wix",
+          title: "Minesweeper",
+          desc: "Mineseeper game (HTML5, CSS and JavaScript)"
+        },
+        {
+          src: "https://github.com/itamardavidyan/ShiftManagement",
+          title: "Shift Management",
+          desc: "website to manage employee shifts (jQuery + Firebase)"
+        }
       ]
     };
+  }
+
+  renderRows() {
+    return this.state.rows.map((row: RowsComp, index: number) => {
+      return (
+        <Row title={row.title} src={row.src} desc={row.desc} key={index} />
+      );
+      // return <p key={index}>{skill.name + " - " + skill.src}</p>;
+    });
   }
 
   public render() {
@@ -35,7 +61,7 @@ export default class Projects extends React.Component<any, ComponentState> {
       <section className="text-center" id="projects">
         <div className="container">
           <header className="section-header">
-            <div className="small-container">
+            <div className="container small-container">
               <h2>Projects</h2>
               <p>Some projects I made in my free time.</p>
               <p>
@@ -58,11 +84,10 @@ export default class Projects extends React.Component<any, ComponentState> {
                 <th>Description</th>
               </tr>
             </thead>
-            <tbody>
-              <Row />
-            </tbody>
+            <tbody>{this.renderRows()}</tbody>
           </table>
         </div>
+        <br />
       </section>
     );
   }

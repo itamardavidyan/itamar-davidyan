@@ -14,11 +14,11 @@ export default class Row extends React.Component<any, any> {
     return (
       <tr>
         <td>
-          <a href="https://taniarascia.github.io/new-moon/" target="_blank">
-            New Moon
+          <a href={this.props.src} target={this.props.src}>
+            {this.props.title}
           </a>
         </td>
-        <td>A dark syntax theme optimized for web development.</td>
+        <td>{this.props.desc}</td>
       </tr>
     );
   }
