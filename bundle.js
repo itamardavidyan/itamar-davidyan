@@ -28921,13 +28921,13 @@ module.exports = __webpack_require__.p + "584d9f322f08684db8ff2217731e474f.png";
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "07e3337d2c110571678591faf548bf20.png";
+module.exports = __webpack_require__.p + "ba0f21a619a5cf7e482a9e72d4748d15.png";
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c521e7e67222276a6860665a46813cc6.png";
+module.exports = __webpack_require__.p + "1ee882aa9ba83c05052841634e18bd59.png";
 
 /***/ }),
 /* 38 */
@@ -28939,7 +28939,7 @@ module.exports = __webpack_require__.p + "728ff5a8e44d74cd0f2359ef0a9ec88a.png";
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "5114048eaf144baf070b3aea7f9b7a51.png";
+module.exports = __webpack_require__.p + "f52e906558ba7684b66325293939018f.png";
 
 /***/ }),
 /* 40 */
@@ -28951,19 +28951,19 @@ module.exports = __webpack_require__.p + "0cded3a3276425911d55a2552bf361bf.png";
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f8dab57d048fabd69ea16c67e1615b86.png";
+module.exports = __webpack_require__.p + "c1ac79e038289d281ee9cb365f061899.png";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "61241da4e621812cea0ee49967829c46.png";
+module.exports = __webpack_require__.p + "21c6fec52917ea7aab2e322e4297a5d3.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "73e24896289a49f3365faf66faec2f65.png";
+module.exports = __webpack_require__.p + "0303ee84de527c822e6cfce161ead183.png";
 
 /***/ }),
 /* 44 */
@@ -28975,7 +28975,7 @@ module.exports = __webpack_require__.p + "26cc95f255ccb936d154b43614f61602.png";
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "4f7d4f3b30e3c1c02c8a902f60a034c7.png";
+module.exports = __webpack_require__.p + "ca32cd2c00e5d3fbc14c15e4d7dfe90a.png";
 
 /***/ }),
 /* 46 */
@@ -29295,7 +29295,7 @@ exports = module.exports = __webpack_require__(53)(false);
 
 
 // module
-exports.push([module.i, ".small-container {\n  max-width: 650px; }\n\n.skills .card {\n  flex: 1 1 calc(25% - 1rem); }\n\n.flex {\n  display: flex; }\n\n.skills {\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\nimg {\n  align-self: center; }\n  @media screen and (max-width: 500px) {\n    img {\n      max-width: 50px;\n      max-height: 50px; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    img {\n      max-width: 80px;\n      max-height: 80px; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    img {\n      max-width: 120px;\n      max-height: 120px; } }\n  @media screen and (min-width: 1171px) {\n    img {\n      max-width: 150px;\n      max-height: 150px; } }\n\n.card {\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-transition: all 200ms ease;\n  transition: all 200ms ease;\n  padding: 0.5rem;\n  background: #fff;\n  border: 1px solid #ebecec;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  margin: 0.5rem; }\n  @media screen and (max-width: 500px) {\n    .card .card {\n      min-width: 120px; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .card .card {\n      min-width: 150px;\n      max-height: 100px; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    .card .card {\n      min-width: 220px; } }\n\n.skillTitle {\n  font-size: 1.1rem;\n  font-weight: 600; }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .skillTitle {\n      font-size: 0.8rem;\n      font-weight: 550; } }\n  @media screen and (max-width: 500px) {\n    .skillTitle {\n      font-size: 0.6rem;\n      font-weight: 500; } }\n\na.button,\n[type=\"button\"],\n[type=\"submit\"],\nbutton {\n  display: inline-block;\n  background-image: linear-gradient(to right, #45bafc 0%, #57eea1 51%, #45bafc 100%);\n  background-size: 300% auto;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  text-align: center;\n  vertical-align: middle;\n  padding: 1rem 1.75rem;\n  font-size: 1.1rem;\n  font-weight: 700;\n  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);\n  cursor: pointer; }\n\na.button:hover,\n[type=\"button\"]:hover,\n[type=\"submit\"]:hover,\n.button-secondary,\na.button-secondary {\n  color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  background: linear-gradient(to top right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.05));\n  margin: 5px; }\n\n.button-secondary:hover,\na.button-secondary:hover {\n  color: #fff;\n  border: 1px solid rgba(255, 255, 255, 0.3);\n  background: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.03)), to(rgba(255, 255, 255, 0.07)));\n  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.07)); }\n\nlabel {\n  display: block;\n  font-weight: 700;\n  margin-bottom: 0.5rem; }\n\n[type=\"text\"],\n[type=\"email\"],\ntextarea {\n  width: 100%;\n  display: block;\n  border: 1px solid #dee0e0;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  padding: 1rem;\n  font-size: 1.1rem;\n  margin-bottom: 1rem; }\n\n[type=\"text\"]:hover,\n[type=\"email\"]:hover,\ntextarea:hover {\n  border: 1px solid #c4c7c7; }\n\n[type=\"text\"]:focus,\n[type=\"email\"]:focus,\ntextarea:focus {\n  outline: 0;\n  border: 1px solid #45bafc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe; }\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.primary {\n  color: #45bafc; }\n\n.secondary {\n  color: #57eea1; }\n\n.alt-bg {\n  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));\n  background: linear-gradient(to top right, #f6f6f7, #fefefe); }\n\nfooter {\n  display: block; }\n\n.site-footer {\n  text-align: center;\n  padding: 2rem 0;\n  background: #292c33;\n  color: #bec6d5; }\n\n.footer-bottom {\n  text-align: center;\n  padding: 2rem 0;\n  background: #1d1e25;\n  color: #909db7; }\n\nh2 {\n  padding-top: 20px; }\n\n#projects {\n  background-color: #f3f3f3;\n  padding-top: 30px; }\n\n.float-left {\n  float: left; }\n\n#profile {\n  border-radius: 50%;\n  margin-bottom: 15px;\n  width: 100%;\n  height: 100%; }\n", ""]);
+exports.push([module.i, ".small-container {\n  max-width: 650px; }\n\n.skills .card {\n  flex: 1 1 calc(25% - 1rem); }\n\n.flex {\n  display: flex; }\n\n.skills {\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\nimg {\n  align-self: center; }\n  @media screen and (max-width: 500px) {\n    img {\n      max-width: 50px;\n      max-height: 50px; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    img {\n      max-width: 80px;\n      max-height: 80px; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    img {\n      max-width: 120px;\n      max-height: 120px; } }\n  @media screen and (min-width: 1171px) {\n    img {\n      max-width: 150px;\n      max-height: 150px; } }\n\n.card {\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-transition: all 200ms ease;\n  transition: all 200ms ease;\n  background: #fff;\n  border: 1px solid #ebecec;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  margin: 0.5rem; }\n  @media screen and (max-width: 500px) {\n    .card {\n      min-width: 120px;\n      margin: 0.2rem;\n      padding: 0.5rem;\n      padding-top: 0.8rem; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .card {\n      min-width: 150px;\n      margin: 0.3rem;\n      padding: 0.8rem; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    .card {\n      min-width: 220px;\n      margin: 0.4rem;\n      padding: 1.2rem; } }\n  @media screen and (min-width: 1171px) {\n    .card {\n      min-width: 220px;\n      margin: 0.5rem;\n      padding: 1.5rem; } }\n\n.skillTitle {\n  font-size: 1.1rem;\n  font-weight: 600; }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .skillTitle {\n      font-size: 0.8rem;\n      font-weight: 550; } }\n  @media screen and (max-width: 500px) {\n    .skillTitle {\n      font-size: 0.6rem;\n      font-weight: 500; } }\n\na.button,\n[type=\"button\"],\n[type=\"submit\"],\nbutton {\n  display: inline-block;\n  background-image: linear-gradient(to right, #45bafc 0%, #57eea1 51%, #45bafc 100%);\n  background-size: 300% auto;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  text-align: center;\n  vertical-align: middle;\n  padding: 1rem 1.75rem;\n  font-size: 1.1rem;\n  font-weight: 700;\n  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);\n  cursor: pointer; }\n\na.button:hover,\n[type=\"button\"]:hover,\n[type=\"submit\"]:hover,\n.button-secondary,\na.button-secondary {\n  color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  background: linear-gradient(to top right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.05));\n  margin: 5px; }\n\n.button-secondary:hover,\na.button-secondary:hover {\n  color: #fff;\n  border: 1px solid rgba(255, 255, 255, 0.3);\n  background: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.03)), to(rgba(255, 255, 255, 0.07)));\n  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.07)); }\n\nlabel {\n  display: block;\n  font-weight: 700;\n  margin-bottom: 0.5rem; }\n\n[type=\"text\"],\n[type=\"email\"],\ntextarea {\n  width: 100%;\n  display: block;\n  border: 1px solid #dee0e0;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  padding: 1rem;\n  font-size: 1.1rem;\n  margin-bottom: 1rem; }\n\n[type=\"text\"]:hover,\n[type=\"email\"]:hover,\ntextarea:hover {\n  border: 1px solid #c4c7c7; }\n\n[type=\"text\"]:focus,\n[type=\"email\"]:focus,\ntextarea:focus {\n  outline: 0;\n  border: 1px solid #45bafc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe; }\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.primary {\n  color: #45bafc; }\n\n.secondary {\n  color: #57eea1; }\n\n.alt-bg {\n  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));\n  background: linear-gradient(to top right, #f6f6f7, #fefefe); }\n\nfooter {\n  display: block; }\n\n.site-footer {\n  text-align: center;\n  padding: 2rem 0;\n  background: #292c33;\n  color: #bec6d5; }\n\n.footer-bottom {\n  text-align: center;\n  padding: 2rem 0;\n  background: #1d1e25;\n  color: #909db7; }\n\nh2 {\n  padding-top: 20px; }\n\n#projects {\n  background-color: #f3f3f3;\n  padding-top: 30px; }\n\n.float-left {\n  float: left; }\n\n#profile {\n  border-radius: 50%;\n  margin-bottom: 15px;\n  max-width: 100px;\n  max-height: 100px;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 // exports
 
