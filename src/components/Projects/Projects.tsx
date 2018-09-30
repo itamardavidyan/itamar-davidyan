@@ -1,6 +1,6 @@
 import * as React from "react";
 import Row from "../Projects/Row";
-import "./projects.scss";
+// import "./projects.scss";
 
 interface ComponentState {
   rows: Array<RowsComp>;
@@ -65,13 +65,7 @@ export default class Projects extends React.Component<any, ComponentState> {
               <h2>Projects</h2>
               <p>Some projects I made in my free time.</p>
               <p>
-                <a
-                  className="btn btn-primary"
-                  role="button"
-                  href="https://github.com/itamardavidyan"
-                >
-                  View GitHub
-                </a>
+                <input type="button" value="View GitHub" />
               </p>
             </div>
           </header>
@@ -91,4 +85,14 @@ export default class Projects extends React.Component<any, ComponentState> {
       </section>
     );
   }
+}
+
+{
+  /* <a
+className="btn btn-primary"
+role="button"
+href="https://github.com/itamardavidyan"
+>
+View GitHub
+</a> */
 }

@@ -1,11 +1,11 @@
 import * as React from "react";
+declare var require: any;
 
 export default class Skill extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
       name: this.props.name,
-      src: this.props.src,
       index: this.props.index
     };
   }
@@ -13,8 +13,11 @@ export default class Skill extends React.Component<any, any> {
   public render() {
     return (
       <div className="card" key={this.props.index}>
-        <img src={this.props.src} alt={this.props.name} />
-        <h3>{this.props.name}</h3>
+        <img
+          src={require("./icons/" + this.props.name + ".png")}
+          alt={this.props.name}
+        />
+        <p className="skillTitle">{this.props.name}</p>
       </div>
     );
   }

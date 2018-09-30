@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./contact.scss";
 
 export default class Contact extends React.Component<any, any> {
   public render() {
@@ -30,7 +29,7 @@ export default class Contact extends React.Component<any, any> {
             <input type="email" name="_replyto" />
             <label>Message</label>
             <textarea name="message" />
-            <input type="submit" value="Send" />
+            <input className="float-left" type="submit" value="Send" />
             <br />
             <br />
             <br />

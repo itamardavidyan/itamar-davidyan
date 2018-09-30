@@ -1,13 +1,12 @@
 import * as React from "react";
 import Skill from "../TechSkills/Skill";
-import "./TechSkills.scss";
+// import "./TechSkills.scss";
 
 interface ComponentState {
   skills: Array<SkillsComp>;
 }
 
 interface SkillsComp {
-  src: string;
   name: string;
 }
 
@@ -17,56 +16,36 @@ export default class TechSkills extends React.Component<{}, ComponentState> {
     this.state = {
       skills: [
         {
-          src:
-            "http://www.stickpng.com/assets/images/5847f5bdcef1014c0b5e489c.png",
-          name: "html"
+          name: "HTML5"
         },
         {
-          src:
-            "https://cdn.freebiesupply.com/logos/large/2x/css-3-logo-png-transparent.png",
-          name: "css"
+          name: "CSS3"
         },
         {
-          src:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png",
-          name: "sass"
+          name: "Sass"
         },
         {
-          src:
-            "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
           name: "JavaScript"
         },
         {
-          src:
-            "http://pluspng.com/img-png/nodejs-logo-png-create-a-model-to-persist-data-in-a-node-js-loopback-api-from-beeman-nl-on-eggheadio-1200.png",
           name: "NodeJS"
         },
         {
-          src:
-            "http://infoxit.com.np/wp-content/uploads/2016/11/jquery-icon.png",
           name: "jQuery"
         },
         {
-          src:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png",
           name: "ReactJS"
         },
         {
-          src:
-            "https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png",
           name: "Bootstrap"
         },
         {
-          src: "https://rynop.files.wordpress.com/2016/09/ts.png?w=816",
           name: "TypeScript"
         },
         {
-          src: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
-          name: "git"
+          name: "Git"
         },
         {
-          src:
-            "http://www.stickpng.com/assets/images/5847f40ecef1014c0b5e488a.png",
           name: "Firebase"
         }
       ]
@@ -75,8 +54,7 @@ export default class TechSkills extends React.Component<{}, ComponentState> {
 
   renderSkills() {
     return this.state.skills.map((skill: SkillsComp, index: number) => {
-      return <Skill name={skill.name} src={skill.src} key={index} />;
-      // return <p key={index}>{skill.name + " - " + skill.src}</p>;
+      return <Skill name={skill.name} key={index} />;
     });
   }
 
