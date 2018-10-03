@@ -18276,11 +18276,11 @@ var $ = __webpack_require__(28);
 var NavBar_1 = __webpack_require__(29);
 var Header_1 = __webpack_require__(30);
 var TechSkills_1 = __webpack_require__(32);
-var Projects_1 = __webpack_require__(46);
-var Contact_1 = __webpack_require__(48);
-var BottomFooter_1 = __webpack_require__(49);
-var SiteFooter_1 = __webpack_require__(50);
-__webpack_require__(51);
+var Projects_1 = __webpack_require__(51);
+var Contact_1 = __webpack_require__(53);
+var BottomFooter_1 = __webpack_require__(54);
+var SiteFooter_1 = __webpack_require__(55);
+__webpack_require__(56);
 var App = (function (_super) {
     __extends(App, _super);
     function App(props) {
@@ -18304,7 +18304,7 @@ var App = (function (_super) {
             React.createElement("header", null,
                 React.createElement(NavBar_1.default, { projectsClick: this.projectsClick, contactClick: this.contactClick })),
             React.createElement("main", null,
-                React.createElement(Header_1.default, null),
+                React.createElement(Header_1.default, { contactClick: this.contactClick }),
                 React.createElement(TechSkills_1.default, null),
                 React.createElement("div", { id: "scrollToProjects" }, " "),
                 React.createElement(Projects_1.default, null),
@@ -28740,18 +28740,36 @@ exports.default = NavBar;
 
 "use strict";
 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-function default_1() {
-    return (React.createElement("section", { className: "jumbotron text-center" },
-        React.createElement("div", { className: "container" },
-            React.createElement("h1", { className: "jumbotron-heading" }, "Itamar Davidyan"),
-            React.createElement("p", { className: "lead text-muted" }, "Fullstack developer"),
-            React.createElement("img", { src: __webpack_require__(31), alt: "profilePicture", id: "profile" }),
-            React.createElement("p", null,
-                React.createElement("input", { type: "button", value: "Get in Touch" })))));
-}
-exports.default = default_1;
+var Header = (function (_super) {
+    __extends(Header, _super);
+    function Header() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Header.prototype.render = function () {
+        return (React.createElement("section", { className: "jumbotron text-center" },
+            React.createElement("div", { className: "container" },
+                React.createElement("h1", { className: "jumbotron-heading" }, "Itamar Davidyan"),
+                React.createElement("p", { className: "lead text-muted" }, "Fullstack developer"),
+                React.createElement("img", { src: __webpack_require__(31), alt: "profilePicture", id: "profile" }),
+                React.createElement("p", null,
+                    React.createElement("a", { href: "#Contact", onClick: this.props.contactClick },
+                        React.createElement("input", { type: "button", value: "Get in Touch" }))))));
+    };
+    return Header;
+}(React.Component));
+exports.default = Header;
 
 
 /***/ }),
@@ -28786,6 +28804,27 @@ var TechSkills = (function (_super) {
         _this.state = {
             skills: [
                 {
+                    name: "ReactJS"
+                },
+                {
+                    name: "NodeJS"
+                },
+                {
+                    name: "TypeScript"
+                },
+                {
+                    name: "JavaScript"
+                },
+                {
+                    name: "jQuery"
+                },
+                {
+                    name: "mongoDB"
+                },
+                {
+                    name: "webpack"
+                },
+                {
                     name: "HTML5"
                 },
                 {
@@ -28795,22 +28834,13 @@ var TechSkills = (function (_super) {
                     name: "Sass"
                 },
                 {
-                    name: "JavaScript"
-                },
-                {
-                    name: "NodeJS"
-                },
-                {
-                    name: "jQuery"
-                },
-                {
-                    name: "ReactJS"
-                },
-                {
                     name: "Bootstrap"
                 },
                 {
-                    name: "TypeScript"
+                    name: "python"
+                },
+                {
+                    name: "C#"
                 },
                 {
                     name: "Git"
@@ -28884,16 +28914,21 @@ exports.default = Skill;
 
 var map = {
 	"./Bootstrap.png": 35,
-	"./CSS3.png": 36,
-	"./Firebase.png": 37,
-	"./Git.png": 38,
-	"./HTML5.png": 39,
-	"./JavaScript.png": 40,
-	"./NodeJS.png": 41,
-	"./ReactJS.png": 42,
-	"./Sass.png": 43,
-	"./TypeScript.png": 44,
-	"./jQuery.png": 45
+	"./C#.png": 36,
+	"./CSS3.png": 37,
+	"./Firebase.png": 38,
+	"./Git.png": 39,
+	"./HTML5.png": 40,
+	"./JSON.png": 41,
+	"./JavaScript.png": 42,
+	"./NodeJS.png": 43,
+	"./ReactJS.png": 44,
+	"./Sass.png": 45,
+	"./TypeScript.png": 46,
+	"./jQuery.png": 47,
+	"./mongoDB.png": 48,
+	"./python.png": 49,
+	"./webpack.png": 50
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -28921,64 +28956,94 @@ module.exports = __webpack_require__.p + "584d9f322f08684db8ff2217731e474f.png";
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ba0f21a619a5cf7e482a9e72d4748d15.png";
+module.exports = __webpack_require__.p + "0b236c99005a767f40953259013c2a20.png";
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1ee882aa9ba83c05052841634e18bd59.png";
+module.exports = __webpack_require__.p + "ba0f21a619a5cf7e482a9e72d4748d15.png";
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "728ff5a8e44d74cd0f2359ef0a9ec88a.png";
+module.exports = __webpack_require__.p + "1ee882aa9ba83c05052841634e18bd59.png";
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "f52e906558ba7684b66325293939018f.png";
+module.exports = __webpack_require__.p + "728ff5a8e44d74cd0f2359ef0a9ec88a.png";
 
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "0cded3a3276425911d55a2552bf361bf.png";
+module.exports = __webpack_require__.p + "f52e906558ba7684b66325293939018f.png";
 
 /***/ }),
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c1ac79e038289d281ee9cb365f061899.png";
+module.exports = __webpack_require__.p + "a63a72d83da729beecb098419dd2dce9.png";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "21c6fec52917ea7aab2e322e4297a5d3.png";
+module.exports = __webpack_require__.p + "0cded3a3276425911d55a2552bf361bf.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "0303ee84de527c822e6cfce161ead183.png";
+module.exports = __webpack_require__.p + "c1ac79e038289d281ee9cb365f061899.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "26cc95f255ccb936d154b43614f61602.png";
+module.exports = __webpack_require__.p + "21c6fec52917ea7aab2e322e4297a5d3.png";
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ca32cd2c00e5d3fbc14c15e4d7dfe90a.png";
+module.exports = __webpack_require__.p + "0303ee84de527c822e6cfce161ead183.png";
 
 /***/ }),
 /* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "26cc95f255ccb936d154b43614f61602.png";
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ca32cd2c00e5d3fbc14c15e4d7dfe90a.png";
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4f46be41435ec190eccb1e819229df7b.png";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ca2ceddcd9c28a22c449286f3fe66751.png";
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c500a3801d8356a86da86a06c3d13a4d.png";
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28995,7 +29060,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var Row_1 = __webpack_require__(47);
+var Row_1 = __webpack_require__(52);
 var Projects = (function (_super) {
     __extends(Projects, _super);
     function Projects(props) {
@@ -29044,12 +29109,13 @@ var Projects = (function (_super) {
                         React.createElement("h2", null, "Projects"),
                         React.createElement("p", null, "Some projects I made in my free time."),
                         React.createElement("p", null,
-                            React.createElement("input", { type: "button", value: "View GitHub" }))))),
+                            React.createElement("a", { href: "https://github.com/itamardavidyan", target: "_blank" },
+                                React.createElement("input", { type: "button", value: "View GitHub" })))))),
             React.createElement("div", { className: "container" },
                 React.createElement("table", { className: "table table-striped table-bordered" },
                     React.createElement("thead", null,
                         React.createElement("tr", null,
-                            React.createElement("th", null, "Project"),
+                            React.createElement("th", null, "Projectt"),
                             React.createElement("th", null, "Description"))),
                     React.createElement("tbody", null, this.renderRows()))),
             React.createElement("br", null)));
@@ -29062,7 +29128,7 @@ exports.default = Projects;
 
 
 /***/ }),
-/* 47 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29102,7 +29168,7 @@ exports.default = Row;
 
 
 /***/ }),
-/* 48 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29157,7 +29223,7 @@ exports.default = Contact;
 
 
 /***/ }),
-/* 49 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29190,7 +29256,7 @@ exports.default = bottomFotter;
 
 
 /***/ }),
-/* 50 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29237,11 +29303,11 @@ exports.default = siteFooter;
 
 
 /***/ }),
-/* 51 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(52);
+var content = __webpack_require__(57);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -29255,7 +29321,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(54)(content, options);
+var update = __webpack_require__(59)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -29287,21 +29353,21 @@ if(false) {
 }
 
 /***/ }),
-/* 52 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(53)(false);
+exports = module.exports = __webpack_require__(58)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".small-container {\n  max-width: 650px; }\n\n.skills .card {\n  flex: 1 1 calc(25% - 1rem); }\n\n.flex {\n  display: flex; }\n\n.skills {\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\nimg {\n  align-self: center; }\n  @media screen and (max-width: 500px) {\n    img {\n      max-width: 50px;\n      max-height: 50px; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    img {\n      max-width: 80px;\n      max-height: 80px; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    img {\n      max-width: 120px;\n      max-height: 120px; } }\n  @media screen and (min-width: 1171px) {\n    img {\n      max-width: 150px;\n      max-height: 150px; } }\n\n.card {\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-transition: all 200ms ease;\n  transition: all 200ms ease;\n  background: #fff;\n  border: 1px solid #ebecec;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  margin: 0.5rem; }\n  @media screen and (max-width: 500px) {\n    .card {\n      min-width: 120px;\n      margin: 0.2rem;\n      padding: 0.5rem;\n      padding-top: 0.8rem; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .card {\n      min-width: 150px;\n      margin: 0.3rem;\n      padding: 0.8rem; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    .card {\n      min-width: 220px;\n      margin: 0.4rem;\n      padding: 1.2rem; } }\n  @media screen and (min-width: 1171px) {\n    .card {\n      min-width: 220px;\n      margin: 0.5rem;\n      padding: 1.5rem; } }\n\n.skillTitle {\n  font-size: 1.1rem;\n  font-weight: 600; }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .skillTitle {\n      font-size: 0.8rem;\n      font-weight: 550; } }\n  @media screen and (max-width: 500px) {\n    .skillTitle {\n      font-size: 0.6rem;\n      font-weight: 500; } }\n\na.button,\n[type=\"button\"],\n[type=\"submit\"],\nbutton {\n  display: inline-block;\n  background-image: linear-gradient(to right, #45bafc 0%, #57eea1 51%, #45bafc 100%);\n  background-size: 300% auto;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  text-align: center;\n  vertical-align: middle;\n  padding: 1rem 1.75rem;\n  font-size: 1.1rem;\n  font-weight: 700;\n  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);\n  cursor: pointer; }\n\na.button:hover,\n[type=\"button\"]:hover,\n[type=\"submit\"]:hover,\n.button-secondary,\na.button-secondary {\n  color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  background: linear-gradient(to top right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.05));\n  margin: 5px; }\n\n.button-secondary:hover,\na.button-secondary:hover {\n  color: #fff;\n  border: 1px solid rgba(255, 255, 255, 0.3);\n  background: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.03)), to(rgba(255, 255, 255, 0.07)));\n  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.07)); }\n\nlabel {\n  display: block;\n  font-weight: 700;\n  margin-bottom: 0.5rem; }\n\n[type=\"text\"],\n[type=\"email\"],\ntextarea {\n  width: 100%;\n  display: block;\n  border: 1px solid #dee0e0;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  padding: 1rem;\n  font-size: 1.1rem;\n  margin-bottom: 1rem; }\n\n[type=\"text\"]:hover,\n[type=\"email\"]:hover,\ntextarea:hover {\n  border: 1px solid #c4c7c7; }\n\n[type=\"text\"]:focus,\n[type=\"email\"]:focus,\ntextarea:focus {\n  outline: 0;\n  border: 1px solid #45bafc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe; }\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.primary {\n  color: #45bafc; }\n\n.secondary {\n  color: #57eea1; }\n\n.alt-bg {\n  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));\n  background: linear-gradient(to top right, #f6f6f7, #fefefe); }\n\nfooter {\n  display: block; }\n\n.site-footer {\n  text-align: center;\n  padding: 2rem 0;\n  background: #292c33;\n  color: #bec6d5; }\n\n.footer-bottom {\n  text-align: center;\n  padding: 2rem 0;\n  background: #1d1e25;\n  color: #909db7; }\n\nh2 {\n  padding-top: 20px; }\n\n#projects {\n  background-color: #f3f3f3;\n  padding-top: 30px; }\n\n.float-left {\n  float: left; }\n\n#profile {\n  border-radius: 50%;\n  margin-bottom: 15px;\n  max-width: 100px;\n  max-height: 100px;\n  width: 100%;\n  height: 100%; }\n", ""]);
+exports.push([module.i, ".small-container {\n  max-width: 650px; }\n\n.skills .card {\n  flex: 1 1 calc(25% - 1rem); }\n\n.flex {\n  display: flex; }\n\n.skills {\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\nimg {\n  align-self: center; }\n  @media screen and (max-width: 500px) {\n    img {\n      max-width: 50px;\n      max-height: 50px; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    img {\n      max-width: 80px;\n      max-height: 80px; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    img {\n      max-width: 120px;\n      max-height: 120px; } }\n  @media screen and (min-width: 1171px) {\n    img {\n      max-width: 150px;\n      max-height: 150px; } }\n\n.card {\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-transition: all 200ms ease;\n  transition: all 200ms ease;\n  background: #fff;\n  border: 1px solid #ebecec;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  margin: 0.5rem; }\n  @media screen and (max-width: 500px) {\n    .card {\n      min-width: 120px;\n      margin: 0.2rem;\n      padding: 0.5rem;\n      padding-top: 0.8rem; } }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .card {\n      min-width: 150px;\n      margin: 0.3rem;\n      padding: 0.8rem; } }\n  @media screen and (min-width: 769px) and (max-width: 1170px) {\n    .card {\n      min-width: 220px;\n      margin: 0.4rem;\n      padding: 1.2rem; } }\n  @media screen and (min-width: 1171px) {\n    .card {\n      min-width: 220px;\n      margin: 0.5rem;\n      padding: 1.5rem; } }\n\n.skillTitle {\n  font-size: 1.1rem;\n  font-weight: 600; }\n  @media screen and (min-width: 501px) and (max-width: 768px) {\n    .skillTitle {\n      font-size: 0.8rem;\n      font-weight: 550; } }\n  @media screen and (max-width: 500px) {\n    .skillTitle {\n      font-size: 0.6rem;\n      font-weight: 500; } }\n\na.button,\n[type=\"button\"],\n[type=\"submit\"],\nbutton {\n  display: inline-block;\n  background-image: linear-gradient(to right, #45bafc 0%, #57eea1 51%, #45bafc 100%);\n  background-size: 300% auto;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  text-align: center;\n  vertical-align: middle;\n  padding: 1rem 1.75rem;\n  font-size: 1.1rem;\n  font-weight: 700;\n  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);\n  cursor: pointer; }\n\na.button:hover,\n[type=\"button\"]:hover,\n[type=\"submit\"]:hover,\nbutton:hover {\n  text-decoration: none;\n  background-position: right center; }\n\nlabel {\n  display: block;\n  font-weight: 700;\n  margin-bottom: 0.5rem; }\n\n[type=\"text\"],\n[type=\"email\"],\ntextarea {\n  width: 100%;\n  display: block;\n  border: 1px solid #dee0e0;\n  border-radius: 6px;\n  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  padding: 1rem;\n  font-size: 1.1rem;\n  margin-bottom: 1rem; }\n\n[type=\"text\"]:hover,\n[type=\"email\"]:hover,\ntextarea:hover {\n  border: 1px solid #c4c7c7; }\n\n[type=\"text\"]:focus,\n[type=\"email\"]:focus,\ntextarea:focus {\n  outline: 0;\n  border: 1px solid #45bafc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe; }\n\n.flex {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.primary {\n  color: #45bafc; }\n\n.secondary {\n  color: #57eea1; }\n\n.alt-bg {\n  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));\n  background: linear-gradient(to top right, #f6f6f7, #fefefe); }\n\nfooter {\n  display: block; }\n\n.site-footer {\n  text-align: center;\n  padding: 2rem 0;\n  background: #292c33;\n  color: #bec6d5; }\n\n.footer-bottom {\n  text-align: center;\n  padding: 2rem 0;\n  background: #1d1e25;\n  color: #909db7; }\n\nh2 {\n  padding-top: 20px; }\n\n#projects {\n  background-color: #f3f3f3;\n  padding-top: 30px; }\n\n.float-left {\n  float: left; }\n\n#profile {\n  border-radius: 50%;\n  margin-bottom: 15px;\n  max-width: 100px;\n  max-height: 100px;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 53 */
+/* 58 */
 /***/ (function(module, exports) {
 
 /*
@@ -29383,7 +29449,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 54 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -29452,7 +29518,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(55);
+var	fixUrls = __webpack_require__(60);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -29787,7 +29853,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 55 */
+/* 60 */
 /***/ (function(module, exports) {
 
 
