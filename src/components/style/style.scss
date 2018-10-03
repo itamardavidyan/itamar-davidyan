@@ -150,37 +150,9 @@ button {
 a.button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
-// button:hover {
-//   text-decoration: none;
-//   background-position: right center;
-// }
-.button-secondary,
-a.button-secondary {
-  color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.01),
-    rgba(255, 255, 255, 0.05)
-  );
-  margin: 5px;
-}
-.button-secondary:hover,
-a.button-secondary:hover {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left bottom,
-    from(rgba(255, 255, 255, 0.03)),
-    to(rgba(255, 255, 255, 0.07))
-  );
-  background: linear-gradient(
-    to bottom left,
-    rgba(255, 255, 255, 0.03),
-    rgba(255, 255, 255, 0.07)
-  );
+button:hover {
+  text-decoration: none;
+  background-position: right center;
 }
 label {
   display: block;

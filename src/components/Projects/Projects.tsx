@@ -65,7 +65,9 @@ export default class Projects extends React.Component<any, ComponentState> {
               <h2>Projects</h2>
               <p>Some projects I made in my free time.</p>
               <p>
-                <input type="button" value="View GitHub" />
+                <a href="https://github.com/itamardavidyan" target="_blank">
+                  <input type="button" value="View GitHub" />
+                </a>
               </p>
             </div>
           </header>
@@ -74,7 +76,7 @@ export default class Projects extends React.Component<any, ComponentState> {
           <table className="table table-striped table-bordered">
             <thead>
               <tr>
-                <th>Project</th>
+                <th>Projectt</th>
                 <th>Description</th>
               </tr>
             </thead>

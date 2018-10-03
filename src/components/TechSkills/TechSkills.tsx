@@ -16,6 +16,27 @@ export default class TechSkills extends React.Component<{}, ComponentState> {
     this.state = {
       skills: [
         {
+          name: "ReactJS"
+        },
+        {
+          name: "NodeJS"
+        },
+        {
+          name: "TypeScript"
+        },
+        {
+          name: "JavaScript"
+        },
+        {
+          name: "jQuery"
+        },
+        {
+          name: "mongoDB"
+        },
+        {
+          name: "webpack"
+        },
+        {
           name: "HTML5"
         },
         {
@@ -25,22 +46,13 @@ export default class TechSkills extends React.Component<{}, ComponentState> {
           name: "Sass"
         },
         {
-          name: "JavaScript"
-        },
-        {
-          name: "NodeJS"
-        },
-        {
-          name: "jQuery"
-        },
-        {
-          name: "ReactJS"
-        },
-        {
           name: "Bootstrap"
         },
         {
-          name: "TypeScript"
+          name: "python"
+        },
+        {
+          name: "C#"
         },
         {
           name: "Git"

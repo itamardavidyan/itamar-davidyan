@@ -55,7 +55,7 @@ export default class App extends React.Component<any, any> {
           />
         </header>
         <main>
-          <Header />
+          <Header contactClick={this.contactClick} />
           <TechSkills />
           <div id="scrollToProjects"> </div>
           <Projects />
