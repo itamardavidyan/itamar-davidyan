@@ -13,8 +13,19 @@ export default class Contact extends React.Component<any, any> {
                 itamardavidyan@gmail.com
               </a>
               , or find me on
-              <a href="https://facebook.com/itamar.davidyan"> Facebook</a> or
-              <a href="https://github.com/itamardavidyan"> GitHub</a>.
+              <a
+                href="https://www.linkedin.com/in/itamar-davidyan/"
+                target="_blank"
+              >
+                {" "}
+                LinkedIn
+              </a>{" "}
+              or
+              <a href="https://github.com/itamardavidyan" target="_blank">
+                {" "}
+                GitHub
+              </a>
+              .
             </p>
           </div>
         </header>

@@ -76,7 +76,7 @@ export default class Projects extends React.Component<any, ComponentState> {
           <table className="table table-striped table-bordered">
             <thead>
               <tr>
-                <th>Projectt</th>
+                <th>Project</th>
                 <th>Description</th>
               </tr>
             </thead>
